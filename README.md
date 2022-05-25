@@ -41,7 +41,13 @@ where p.topic_id is null;
 
 #### - C
 
-- Check my answer in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java)
+- Check my answer in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java) at `listPostTitlesAndTopics` function.
 
-- For my fix, check `listPostTitlesAndTopics2` function also in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java). Notice that this function uses [PostRepository.java](src/main/java/com/virtualmind/codingchallenge/repository/PostRepository.java)
+- For my fix, check `listPostTitlesAndTopics2` function also in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java). Notice that this function uses [PostRepository.java](src/main/java/com/virtualmind/codingchallenge/repository/PostRepository.java).
 
+
+#### - D
+
+- Check my answer in [DateBucket.java](src/main/java/com/virtualmind/codingchallenge/utils/DateBucket.java) at javadoc section of `bucketsize` function
+
+- Refactored the method in [DateBucket.java](src/main/java/com/virtualmind/codingchallenge/utils/DateBucket.java) called `bucketSizeStreamsVersion` function
