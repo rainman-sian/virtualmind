@@ -59,3 +59,31 @@ Check my models in the following java classes:
 > One of the most common patterns I have used lately is the "Addapter pattern". Mostly because my project uses a lot of third API endpoints; In some scenarios we use the data as it comes from the API, but in anothers, the data is expected in different form.
 
 > So, to solve this, we have defined a few Adapter interfaces, we adapt the data as to is expected for the different consumers we have. This is not a complex patter, but we have found it very useful and easy to maintain.
+
+### 3) Modeling
+
+#### - A Class diagram:
+
+![Alt](/src/main/resources/static/img/3-a.png "Class Diagram")
+
+#### - B Class diagram:
+
+> I would create an Factory class that would have the responsibility  of create all difirent kind of expenses.
+
+> I would store the expenses as a list in Building class.
+
+![Alt](/src/main/resources/static/img/3-b.png "Class Diagram")
+
+#### - C Class diagram:
+
+> I would create an ExpenseManager class that would have the responsibility  of the settlement process that would contain the following functions:
+    
+- `calculateTotalExpenditure(fromDate, toDate, expensesList): BigDecimal` This will calculate the total expenditure of a period between `fromDate` and `endDate`. This function also recibe the list of expenses (`expensesList`) from `Building` class. The result of this function will be the total amount of expenses.
+
+- `calculateTotalExpenditureByApartment(totalExpenditure, nApartment): BigDecimal` This will calculate the corresponding amout for each apartment. The calculation is based on the total expenditure `totalExpenditure`(from previous function) and the number of apartments `nApartment`
+
+- `issueBill(owner:Owner) : Bill` This will issue the bill for each `owner`. The actually bill creation will be delegate to the `Bill` class
+
+- `notify(owner:Owner): Void` This will notify the owners. This method would use another class (not modeled in diagram) that creates an instace of the type of required notification, e.g.: EmailNotification, SMSNotificaion, PushNotification, etc.
+
+![Alt](/src/main/resources/static/img/3-c.png "Class Diagram")
