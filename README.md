@@ -29,11 +29,11 @@ where p.topic_id is null;
 ### 2) JAVA
 
 #### - A models:
-    * [Post.java](src\main\java\com\virtualmind\codingchallenge\model\Post.java)
-    * [Topic.java](src\main\java\com\virtualmind\codingchallenge\model\Topic.java)
+* [Post.java](src/main/java/com/virtualmind/codingchallenge/model/Post.java)
+* [Topic.java](src/main/java/com/virtualmind/codingchallenge/model/Topic.java)
 
 #### - B 
-1. I added my answer as comments in [TopicService.java](src\main\java\com\virtualmind\codingchallenge\service\TopicService.java)
+1. I added my answer as comments in [TopicService.java](src/main/java/com/virtualmind/codingchallenge/service/TopicService.java)
 
 2. The HTTP request would be something like `PUT https://<domain>/topic`
 
