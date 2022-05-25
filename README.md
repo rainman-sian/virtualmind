@@ -29,6 +29,7 @@ where p.topic_id is null;
 ### 2) JAVA
 
 #### - A models:
+Check my models in the following java classes:
 * [Post.java](src/main/java/com/virtualmind/codingchallenge/model/Post.java)
 * [Topic.java](src/main/java/com/virtualmind/codingchallenge/model/Topic.java)
 
@@ -51,3 +52,10 @@ where p.topic_id is null;
 - Check my answer in [DateBucket.java](src/main/java/com/virtualmind/codingchallenge/utils/DateBucket.java) at javadoc section of `bucketsize` function
 
 - Refactored the method in [DateBucket.java](src/main/java/com/virtualmind/codingchallenge/utils/DateBucket.java) called `bucketSizeStreamsVersion` function
+
+
+#### - E
+
+> One of the most common patterns I have used lately is the "Addapter pattern". Mostly because my project uses a lot of third API endpoints; In some scenarios we use the data as it comes from the API, but in anothers, the data is expected in different form.
+
+> So, to solve this, we have defined a few Adapter interfaces, we adapt the data as to is expected for the different consumers we have. This is not a complex patter, but we have found it very useful and easy to maintain.
