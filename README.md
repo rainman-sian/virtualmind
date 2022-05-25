@@ -39,3 +39,9 @@ where p.topic_id is null;
 
 3. It would be a `404 not found`
 
+#### - C
+
+- Check my answer in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java)
+
+- For my fix, check `listPostTitlesAndTopics2` function also in [PostService.java](src/main/java/com/virtualmind/codingchallenge/service/PostService.java). Notice that this function uses [PostRepository.java](src/main/java/com/virtualmind/codingchallenge/repository/PostRepository.java)
+
